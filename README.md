@@ -1,1 +1,2 @@
-# NAGCN
+# NAGCN: Node-aligned Graph Convolutional Network for Whole-slide Image Representation and Classification
+Coming soon...
