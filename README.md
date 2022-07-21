@@ -6,7 +6,6 @@
 
 ![](figures/framework.png)
 
-![image-20220715013923261](figures/cluster_sample.png)
 
 ## Pre-requisites
 
