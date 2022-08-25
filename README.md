@@ -1,11 +1,5 @@
 # NAGCN: Node-aligned Graph Convolutional Network for Whole-slide Image Representation and Classification (CVPR2022) 
 
-## Abstract
-
-> The large-scale whole-slide images (WSIs) facilitate the learning-based computational pathology methods. However, the gigapixel size of WSIs makes it hard to train a conventional model directly. Current approaches typically adopt multiple-instance learning (MIL) to tackle this problem. Among them, MIL combined with graph convolutional network (GCN) is a significant branch, where the sampled patches are regarded as the graph nodes to further discover their correlations. However, it is difficult to build correspondence across patches from different WSIs. Therefore, most methods have to perform non-ordered node pooling to generate the bag-level representation. Direct non-ordered pooling will lose much structural and contextual information, such as patch distribution and heterogeneous patterns, which is critical for WSI representation. In this paper, we propose a hierarchical global-to-local clustering strategy to build a Node-Aligned GCN (NAGCN) to represent WSI with rich local structural information as well as global distribution. We first deploy a global clustering operation based on the instance features in the dataset to build the correspondence across different WSIs. Then, we perform a local clustering-based sampling strategy to select typical instances belonging to each cluster within the WSI. Finally, we employ the graph convolution to obtain the representation. Since our graph construction strategy ensures the alignment among different WSIs, WSI-level representation can be easily generated and used for the subsequent classification. The experiment results on two cancer subtype classification datasets demonstrate our method achieves better performance compared with the state-of-the-art methods.
-
-![](figures/framework.png)
-
 
 ## Pre-requisites
 
@@ -15,7 +9,6 @@
 * Tqdm
 * PyTorch
 * PyTorch Geometric
-* tensorboardX
 
 ## Data Preparation
 
@@ -58,8 +51,6 @@ $ python graph_construction.py
 ```shell
 $ CUDA_VISIBLE_DEVICES=0 python main_nsclc.py 
 ```
-
-Keep updating...
 
 ***
 
